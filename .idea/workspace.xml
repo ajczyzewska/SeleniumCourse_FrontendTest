@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2726d35-febb-45f8-ab20-99c6c98b57de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/First_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/First_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/First_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/First_Test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,12 +48,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3753" />
+          <entry key="java" value="5347" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3753" />
+          <entry key="JAVA" value="5347" />
         </counts>
       </usages-collector>
     </session>
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/First_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="420">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,7 +140,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534014485567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534320889377" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -159,22 +159,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.First_Test.ImplicitWaitTest">
-    <configuration name="First_Test.openPageTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumWorkshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="First_Test" />
-      <option name="METHOD_NAME" value="openPageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.First_Test.HarderTestWait">
     <configuration name="First_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWorkshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="First_Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="First_Test.HarderTestWait" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumWorkshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="First_Test" />
+      <option name="METHOD_NAME" value="HarderTestWait" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,19 +209,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Android JUnit.First_Test.openPageTest" />
       <item itemvalue="JUnit.First_Test.testSearchInput" />
       <item itemvalue="JUnit.First_Test" />
       <item itemvalue="JUnit.First_Test.testElementsOnWebpage_v1" />
       <item itemvalue="JUnit.First_Test.ImplicitWaitTest" />
+      <item itemvalue="JUnit.First_Test.HarderTestWait" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.First_Test.HarderTestWait" />
         <item itemvalue="JUnit.First_Test.ImplicitWaitTest" />
         <item itemvalue="JUnit.First_Test.testElementsOnWebpage_v1" />
         <item itemvalue="JUnit.First_Test.testSearchInput" />
         <item itemvalue="JUnit.First_Test" />
-        <item itemvalue="Android JUnit.First_Test.openPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,42 +239,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 27m 17s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 09h 41m 05s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 29m 08s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 09h 44m 18s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 30m 48s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 09h 52m 35s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 31m 34s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 09h 58m 42s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 33m 06s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 03m 01s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 38m 11s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 05m 40s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 20h 59m 48s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 09m 52s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 21h 00m 39s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 10m 40s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 21h 01m 39s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 11m 44s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_ImplicitWaitTest - 2018.08.11 at 21h 03m 54s.xml">
-      <configuration name="First_Test.ImplicitWaitTest" configurationId="JUnit" />
+    <history-entry file="First_Test_HarderTestWait - 2018.08.15 at 10h 14m 02s.xml">
+      <configuration name="First_Test.HarderTestWait" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.020028612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -322,8 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/First_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="420">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
