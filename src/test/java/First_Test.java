@@ -4,9 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -17,7 +20,6 @@ public class First_Test extends BaseTest {
     @Test
     public void openPageTest() {
         Assert.assertEquals("Wrong page title", "My Store", driver.getTitle());
-        driver.quit();
     }
 
 
@@ -170,13 +172,33 @@ public class First_Test extends BaseTest {
 
 
 
-         @After
-        public void afterTest(){
-        driver.quit();
+    @Test
+    public void ShouldNavigateToPasswordInputWhenTabUsedTest(){
+        Actions action = new Actions(driver);
+        SignInPage singInPage = mainPage.NavigateToSignInPage();
+        singInPage.FillEmailInput("zzz@z.com" + Keys.TAB);
+        action.sendKeys(Keys.TAB);
+        WebElement passwordElement = driver.findElement(singInPage.PasswordSelector);
+        WebElement checkPasswordElement= driver.switchTo().activeElement();
+        Assert.assertEquals("Different field than Password is selected",checkPasswordElement, driver.findElement(singInPage.PasswordSelector));
     }
 
 
+    @Test
+    public void NavigationQuickViewShouldWorkProperlyTest(){
+        this.driver.navigate().to("http://automationpractice.com");
+        mainPage.PressQucikViewOnProductPage();
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//iframe[@class='fancybox-iframe']"))));
+       mainPage.SwitchToIframe();
 
-
+       // WebElement quickview_frame = driver.findElement(By.className("fancybox-iframe"));
+       // driver.switchTo().frame(quickview_frame);
+        mainPage.AddToCart();
+        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(mainPage.AddToCart)));
+        By IconOKSuccess = By.cssSelector("i[class='icon-ok']");
+        Assert.assertTrue("Successful message not visible",driver.findElement(IconOKSuccess).isDisplayed());
     }
+
+}
 
