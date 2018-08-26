@@ -7,6 +7,8 @@ public class BaseTest {
     WebDriver driver;
     MainPage mainPage;
     FooterPage footerPage;
+    ShoppingCartPage shoppingCartPage;
+    SignInPage signInPageForTest;
 
     @Before
 
@@ -16,6 +18,8 @@ public class BaseTest {
         driver.manage().window().maximize();
         mainPage = new MainPage(driver);
         footerPage = new FooterPage(driver);
+        shoppingCartPage = new ShoppingCartPage(driver);
+        signInPageForTest= new SignInPage(driver);
     }
 
 

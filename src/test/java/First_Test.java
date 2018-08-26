@@ -23,7 +23,7 @@ public class First_Test extends BaseTest {
         mainPage.NavigateToHomepage();
         String cssSelector1 = "input[name='search_query']";
         driver.findElement(By.cssSelector(cssSelector1)).sendKeys("Printed dress");
-        driver.findElement(By.cssSelector("button[name='submit_search']")).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector("button[name='submit_search']"));
         int elementsCount = driver.findElements(By.cssSelector("div[class='product-image-container']")).size();
         Assert.assertEquals("Wrong number of items searched", 5, elementsCount);
     }
@@ -68,13 +68,13 @@ public class First_Test extends BaseTest {
         mainPage.NavigateToHomepage();
         String cssSelector_SearchQuery = "input[name='search_query']";
         driver.findElement(By.cssSelector(cssSelector_SearchQuery)).sendKeys("Printed dress");
-        driver.findElement(By.cssSelector("button[name='submit_search']")).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector("button[name='submit_search']"));
 
         //Navigating to selected Dress
         String cssSelector_ChangeToList = "li[id='list']";
-        driver.findElement(By.cssSelector(cssSelector_ChangeToList)).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector(cssSelector_ChangeToList));
         String cssSelector_productLink = "div[class*='button-container'] a[data-id-product='5']";
-        driver.findElement(By.cssSelector(cssSelector_productLink)).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector(cssSelector_productLink));
         String cssSelector_CartOverlay = "div[class='layer_cart_overlay']";
         driver.findElement(By.cssSelector(cssSelector_CartOverlay));
         Assert.assertTrue("Element is not visible", driver.findElement(By.cssSelector(cssSelector_CartOverlay)).isDisplayed());
@@ -89,15 +89,15 @@ public class First_Test extends BaseTest {
         mainPage.NavigateToHomepage();
         String cssSelector4 = "input[name='search_query']";
         driver.findElement(By.cssSelector(cssSelector4)).sendKeys("Printed dress");
-        driver.findElement(By.cssSelector("button[name='submit_search']")).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector("button[name='submit_search']"));
 
         //Navigating to selected Dress
         String cssSelector_productLink = "ul[class= 'product_list grid row'] h5  a[href*='id_product=5']";
-        driver.findElement(By.cssSelector(cssSelector_productLink)).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector(cssSelector_productLink));
 
         // Adding to cart
         String cssSelector_AddToCart = "p[id='add_to_cart'] button[type='Submit']";
-        driver.findElement(By.cssSelector(cssSelector_AddToCart)).click();
+        mainPage.ClickElementByCssSelector(By.cssSelector(cssSelector_AddToCart));
         driver.findElement(By.cssSelector("span[title='Close window']")).isDisplayed();
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("span[title='Close window']"))));
@@ -184,8 +184,8 @@ public class First_Test extends BaseTest {
         mainPage.PressQucikViewOnProductPage();
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//iframe[@class='fancybox-iframe']"))));
-       mainPage.SwitchToIframe();
-       mainPage.ClickElement();
+        mainPage.SwitchToIframe();
+        mainPage.AddToCart();
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(mainPage.AddToCart)));
         By IconOKSuccess = By.cssSelector("i[class='icon-ok']");
         Assert.assertTrue("Successful message not visible",driver.findElement(IconOKSuccess).isDisplayed());
@@ -226,6 +226,33 @@ public class First_Test extends BaseTest {
         mainPage.SwitchToNewWindow();
         Assert.assertTrue("Page title doesn't contains Selenium Framework in title", driver.getTitle().contains("Selenium Framework"));
         Assert.assertTrue("Page is not a Google Page", driver.getCurrentUrl().contains("google"));
+    }
+
+    @Test
+    public void ProcessOfBuyingShouldWorkProperlyTest(){
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        NavigationQuickViewShouldWorkProperlyTest();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("a[class='btn btn-default button button-medium']"))));
+        shoppingCartPage.PressProceedToCheckout(By.xpath("//span[contains(text(),'Proceed to checkout')]"));
+        //driver.findElement(By.xpath("//span[contains(text(),'Proceed to checkout')]")).click();
+        //Raising Quantity
+        driver.findElement(By.cssSelector("a[class='cart_quantity_up btn btn-default button-plus']")).click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("input[size='2']"))));
+        shoppingCartPage.PressProceedToCheckout(By.xpath("//a[contains(@class,'button btn btn-default standard-checkout button-medium')]"));
+        signInPageForTest.FillEmailInput("zzz@z.com");
+        signInPageForTest.FillPasswordInput("zzzzz");
+        mainPage.ClickElementByCssSelector(By.cssSelector("button[id='SubmitLogin']"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("li[class='step_current third']"))));
+        shoppingCartPage.PressProceedToCheckout(By.cssSelector("button[class='button btn btn-default button-medium']"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("li[class='step_current four']"))));
+        mainPage.ClickElementByCssSelector(By.cssSelector("input[name='cgv']"));
+        shoppingCartPage.PressProceedToCheckout(By.xpath("//button[contains(@name,'processCarrier')]"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("li[class='step_current last']"))));
+        mainPage.ClickElementByCssSelector(By.cssSelector("a[class='bankwire']"));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("div[class='box cheque-box']"))));
+        Assert.assertEquals("Wrong message at the end of buying process", "BANK-WIRE PAYMENT.", driver.findElement(By.cssSelector("h3[class='page-subheading']")).getText());
+
+
     }
 }
 

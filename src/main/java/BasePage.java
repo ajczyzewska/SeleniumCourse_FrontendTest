@@ -39,6 +39,7 @@ public class BasePage {
         for(String windowHandle : driver.getWindowHandles()){
             driver.switchTo().window(windowHandle);
         }
+
     }
 
 

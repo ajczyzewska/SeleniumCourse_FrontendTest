@@ -40,7 +40,7 @@ public class MainPage extends BasePage {
         driver.switchTo().frame(quickview_frame);
     }
 
-    void ClickElement(){
+    void AddToCart(){
 
         driver.findElement(AddToCart).click();
     }
@@ -50,4 +50,7 @@ public class MainPage extends BasePage {
         driver.findElement(SocialSelector).click();
     }
 
+    public void ClickElementByCssSelector(By cssSelector) {
+        driver.findElement(cssSelector).click();
+    }
 }
