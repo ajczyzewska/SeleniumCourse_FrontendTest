@@ -33,5 +33,16 @@ public class BasePage {
         protected List<WebElement> findElements(By elementBy){
             return driver.findElements(elementBy);
         }
+
+    void SwitchToNewWindow(){
+        String windowHandleBefore = driver.getWindowHandle();
+        for(String windowHandle : driver.getWindowHandles()){
+            driver.switchTo().window(windowHandle);
+        }
     }
+
+
+
+
+}
 

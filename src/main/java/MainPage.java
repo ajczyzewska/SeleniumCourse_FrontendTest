@@ -40,9 +40,14 @@ public class MainPage extends BasePage {
         driver.switchTo().frame(quickview_frame);
     }
 
-    void AddToCart(){
+    void ClickElement(){
 
         driver.findElement(AddToCart).click();
+    }
+
+    void clickSocialLink(){
+        By SocialSelector=By.cssSelector("li[class='facebook']>a");
+        driver.findElement(SocialSelector).click();
     }
 
 }

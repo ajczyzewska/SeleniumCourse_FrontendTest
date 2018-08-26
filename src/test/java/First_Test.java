@@ -1,17 +1,11 @@
-
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -191,14 +185,47 @@ public class First_Test extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//iframe[@class='fancybox-iframe']"))));
        mainPage.SwitchToIframe();
-
-       // WebElement quickview_frame = driver.findElement(By.className("fancybox-iframe"));
-       // driver.switchTo().frame(quickview_frame);
-        mainPage.AddToCart();
+       mainPage.ClickElement();
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(mainPage.AddToCart)));
         By IconOKSuccess = By.cssSelector("i[class='icon-ok']");
         Assert.assertTrue("Successful message not visible",driver.findElement(IconOKSuccess).isDisplayed());
     }
 
+
+    @Test
+    public void FacebookLinkInFooterShouldRedirectToNewWindowTest(){
+        this.driver.navigate().to("http://automationpractice.com");
+        footerPage.clickSocialLink("facebook");
+        mainPage.SwitchToNewWindow();
+        Assert.assertTrue("Page title doesn't contains Selenium Framework in title", driver.getTitle().contains("Selenium Framework"));
+        Assert.assertTrue("Page is not a Facebook Page", driver.getCurrentUrl().contains("facebook"));
+    }
+
+    @Test
+    public void TwitterLinkInFooterShouldRedirectToNewWindowTest(){
+        this.driver.navigate().to("http://automationpractice.com");
+        footerPage.clickSocialLink("twitter");
+        mainPage.SwitchToNewWindow();
+        Assert.assertTrue("Page title doesn't contains Selenium Framework in title", driver.getTitle().contains("Selenium Framework"));
+        Assert.assertTrue("Page is not a Twitter Page", driver.getCurrentUrl().contains("twitter"));
+    }
+
+    @Test
+    public void YoutubeLinkInFooterShouldRedirectToNewWindowTest(){
+        this.driver.navigate().to("http://automationpractice.com");
+        footerPage.clickSocialLink("youtube");
+        mainPage.SwitchToNewWindow();
+        Assert.assertTrue("Page title doesn't contains Selenium Framework in title", driver.getTitle().contains("Selenium Framework"));
+        Assert.assertTrue("Page is not a Youtube Page", driver.getCurrentUrl().contains("youtube"));
+    }
+
+    @Test
+    public void GooglePlusLinkInFooterShouldRedirectToNewWindowTest(){
+        this.driver.navigate().to("http://automationpractice.com");
+        footerPage.clickSocialLink("google-plus");
+        mainPage.SwitchToNewWindow();
+        Assert.assertTrue("Page title doesn't contains Selenium Framework in title", driver.getTitle().contains("Selenium Framework"));
+        Assert.assertTrue("Page is not a Google Page", driver.getCurrentUrl().contains("google"));
+    }
 }
 

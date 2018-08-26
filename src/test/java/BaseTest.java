@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest {
     WebDriver driver;
     MainPage mainPage;
+    FooterPage footerPage;
+
     @Before
 
     public void beforeTest() {
@@ -13,6 +15,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         mainPage = new MainPage(driver);
+        footerPage = new FooterPage(driver);
     }
 
 

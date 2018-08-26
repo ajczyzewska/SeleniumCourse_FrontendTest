@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2726d35-febb-45f8-ab20-99c6c98b57de" name="Default Changelist" comment="Added POP version">
+    <list default="true" id="c2726d35-febb-45f8-ab20-99c6c98b57de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FooterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/First_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/First_Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,24 +47,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="16" />
+          <entry key="java" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7816" />
+          <entry key="java" value="9087" />
           <entry key="txt" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7816" />
+          <entry key="JAVA" value="9087" />
           <entry key="PLAIN_TEXT" value="74" />
         </counts>
       </usages-collector>
@@ -75,12 +80,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/First_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="198" column="12" selection-start-line="198" selection-start-column="12" selection-end-line="198" selection-end-column="12" />
+            <state relative-caret-position="375">
+              <caret line="225" column="37" lean-forward="true" selection-start-line="225" selection-start-column="37" selection-end-line="225" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,10 +92,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="270">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state relative-caret-position="375">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,10 +120,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FooterPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#124#125#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="255">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +162,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Functions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SignInPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Footer.java" />
         <option value="$PROJECT_DIR$/src/main/java/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FooterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/First_Test.java" />
       </list>
     </option>
@@ -214,7 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535227694424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535279456574" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -233,7 +258,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.First_Test.NavigationQuickViewShouldWorkProperlyTest">
+  <component name="RunManager" selected="JUnit.First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest">
+    <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumWorkshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="First_Test" />
+      <option name="METHOD_NAME" value="FacebookLinkInFooterShouldRedirectToNewWindowTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="First_Test.ImplicitWaitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWorkshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -264,16 +299,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="First_Test.openPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumWorkshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="First_Test" />
-      <option name="METHOD_NAME" value="openPageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="First_Test.testSearchInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWorkshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -287,17 +312,17 @@
     <list>
       <item itemvalue="JUnit.First_Test.testSearchInput" />
       <item itemvalue="JUnit.First_Test.ImplicitWaitTest" />
-      <item itemvalue="JUnit.First_Test.openPageTest" />
       <item itemvalue="JUnit.First_Test.ShouldNavigateToPasswordInputWhenTabUsedTest" />
       <item itemvalue="JUnit.First_Test.NavigationQuickViewShouldWorkProperlyTest" />
+      <item itemvalue="JUnit.First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" />
         <item itemvalue="JUnit.First_Test.NavigationQuickViewShouldWorkProperlyTest" />
         <item itemvalue="JUnit.First_Test.ShouldNavigateToPasswordInputWhenTabUsedTest" />
         <item itemvalue="JUnit.First_Test.ImplicitWaitTest" />
         <item itemvalue="JUnit.First_Test.testSearchInput" />
-        <item itemvalue="JUnit.First_Test.openPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -326,43 +351,51 @@
       <option name="project" value="LOCAL" />
       <updated>1535227574669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added POP version">
+      <created>1535227808785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535227808785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 54m 09s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 05m 32s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 54m 55s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 06m 47s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 54m 56s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 09m 34s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 55m 16s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 11m 26s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 57m 19s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 12m 55s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 58m 23s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 15m 16s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 21h 59m 09s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 18m 20s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 22h 01m 27s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 20m 46s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 22h 03m 22s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 24m 46s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="First_Test_NavigationQuickViewShouldWorkProperlyTest - 2018.08.25 at 22h 03m 44s.xml">
-      <configuration name="First_Test.NavigationQuickViewShouldWorkProperlyTest" configurationId="JUnit" />
+    <history-entry file="First_Test_FacebookLinkInFooterShouldRedirectToNewWindowTest - 2018.08.26 at 12h 30m 01s.xml">
+      <configuration name="First_Test.FacebookLinkInFooterShouldRedirectToNewWindowTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -373,14 +406,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.52217454" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -428,21 +461,9 @@
       <path value="$PROJECT_DIR$/Selenium-Course---Basic-Tests-on-Automation-Practice-Webpage" />
       <path value="$PROJECT_DIR$/SeleniumCourse" />
     </ignored-roots>
-    <MESSAGE value="Added POP version" />
     <MESSAGE value="Added new tests that uses Actions and Iframe Switch." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new tests that uses Actions and Iframe Switch." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainPage.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added POP version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added POP version" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Functions.java" />
@@ -496,18 +517,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="270">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="255">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -516,22 +543,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state relative-caret-position="375">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/First_Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FooterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="198" column="12" selection-start-line="198" selection-start-column="12" selection-end-line="198" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/First_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="225" column="37" lean-forward="true" selection-start-line="225" selection-start-column="37" selection-end-line="225" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
